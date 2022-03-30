@@ -1,13 +1,236 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.login_model {
+  position: absolute;
+  width: 600px;
+  height: 528px;
+  left: 420px;
+  top: 248px;
+
+  background: #ffffff;
+  box-shadow: 0px 5px 16px 1px rgba(229, 229, 229, 0.8);
+  border-radius: 10px;
+}
+.modal-title {
+  position: static;
+  width: 500px;
+  height: 44px;
+  left: 100px;
+  top: 10px;
+
+  /* Typography/H4 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 137.5%;
+  /* identical to box height, or 44px */
+
+  text-align: left;
+
+  /* Text/Primary */
+
+  color: #111827;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#signin {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3px 215px;
+
+  background: #5048e5;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .login_model {
+    position: absolute;
+    width: 344px;
+    height: 469px;
+    left: 16px;
+    top: 176px;
+
+    background: #ffffff;
+    box-shadow: 0px 5px 16px 1px rgba(229, 229, 229, 0.8);
+    border-radius: 10px;
+  }
+  .modal-title {
+    position: absolute;
+    width: 270px;
+    height: 33px;
+    left: 53px;
+    top: 234px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 137.5%;
+    /* identical to box height, or 33px */
+
+    text-align: center;
+
+    /* Text/Primary */
+
+    color: #111827;
+  }
+
+  #signin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3px 215px;
+
+    position: absolute;
+    width: 312px;
+    height: 47px;
+    left: calc(50% - 312px / 2 + 0.5px);
+    top: 492px;
+
+    background: #5048e5;
+    border-radius: 4px;
+  }
+  #email {
+    position: absolute;
+    width: 312px;
+    height: 48px;
+    left: 32px;
+    top: 322px;
+
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  #password {
+    position: absolute;
+    width: 312px;
+    height: 48px;
+    left: 32px;
+    top: 421px;
+
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  #emaillabel {
+    position: absolute;
+    width: 36px;
+    height: 24px;
+    left: 32px;
+    top: 290px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #6b7280;
+  }
+  #passwordlabel {
+    position: absolute;
+    width: 65px;
+    height: 24px;
+    left: 32px;
+    top: 393px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #6b7280;
+  }
+
+  #showpassword {
+    position: absolute;
+    width: 38px;
+    height: 24px;
+    left: 294px;
+    top: 431px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    display: flex;
+    align-items: flex-end;
+    text-decoration-line: underline;
+
+    color: #6b7280;
+  }
+
+  #setSignup {
+    position: static;
+    width: 51px;
+    height: 22px;
+    left: 0px;
+    top: 0px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    /* identical to box height, or 22px */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary/Main */
+
+    color: #5048e5;
+  }
+  #forget {
+    position: static;
+    width: 120px;
+    height: 22px;
+    left: 0px;
+    top: 0px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 157%;
+    /* identical to box height, or 22px */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary/Main */
+
+    color: #5048e5;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+  }
 }
