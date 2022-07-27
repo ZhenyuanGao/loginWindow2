@@ -1,20 +1,95 @@
-.login_model {
-  position: absolute;
-  width: 600px;
-  height: 528px;
-  left: 420px;
-  top: 248px;
-
-  background: #ffffff;
-  box-shadow: 0px 5px 16px 1px rgba(229, 229, 229, 0.8);
-  border-radius: 10px;
+.site-page-header-ghost-wrapper {
+  background-color: #e2e1e0;
 }
-.modal-title {
-  position: static;
-  width: 500px;
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+.picture {
+  height: 200px;
+  width: 240px;
+}
+.picture_shopping {
+  height: 400px;
+  width: 440px;
+}
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.add_product_button {
+  background: #5048e5;
+}
+.list_view {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#signin {
+  width: 100%;
+  background: #5048e5;
+  border-radius: 4px;
+}
+#emaillabel {
+  width: 41px;
+
+  height: 24px;
+
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-size: 16px;
+
+  line-height: 24px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+#passwordlabel {
+  width: 41px;
+
+  height: 24px;
+
+  font-family: "Inter";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-size: 16px;
+
+  line-height: 24px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+.column_gap_signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.createProduct {
+  width: 430px;
   height: 44px;
-  left: 100px;
-  top: 10px;
 
   /* Typography/H4 */
 
@@ -25,212 +100,299 @@
   line-height: 137.5%;
   /* identical to box height, or 44px */
 
-  text-align: left;
+  /* Text/Primary */
+
+  color: #111827;
+}
+.two_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.signin_anomous {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+#password {
+  width: 80%;
+}
+#showpassword {
+  width: 20%;
+}
+.password_show {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.footer {
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.newcontainer {
+  margin: 0;
+  min-height: 100%;
+}
+.container {
+  position: absolute;
+  width: 1323px;
+
+  left: 60px;
+  top: 196px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+.actual_total {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  justify-content: space-between;
+}
+.row_qandp {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+#preview_button {
+  background: #5048e5;
+}
+.test_row {
+  display: flex;
+  justify-content: flex-start;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+.promo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+.title {
+  position: absolute;
+  width: 1193px;
+  height: 44px;
+  left: 60px;
+  top: 128px;
+
+  /* Typography/H4 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 137.5%;
+  /* identical to box height, or 44px */
 
   /* Text/Primary */
 
   color: #111827;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 10px;
 }
-
-#signin {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 3px 215px;
+.add_Product {
+  position: relative;
+  width: 133px;
+  height: 40px;
+  left: 1500px;
+  top: 50px;
 
   background: #5048e5;
   border-radius: 4px;
 }
+.anmoyous {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
 
-@media only screen and (max-width: 768px) {
-  .login_model {
-    position: absolute;
-    width: 344px;
-    height: 469px;
-    left: 16px;
-    top: 176px;
+  position: static;
+  width: 528px;
+  height: 48px;
+  left: 309px;
+  top: 0px;
 
-    background: #ffffff;
-    box-shadow: 0px 5px 16px 1px rgba(229, 229, 229, 0.8);
-    border-radius: 10px;
-  }
-  .modal-title {
-    position: absolute;
-    width: 270px;
-    height: 33px;
-    left: 53px;
-    top: 234px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 4px;
 
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 137.5%;
-    /* identical to box height, or 33px */
+  /* Inside auto layout */
 
-    text-align: center;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 60px;
+}
 
-    /* Text/Primary */
+body {
+  display: flex;
+  justify-content: center;
 
-    color: #111827;
-  }
+  text-align: center;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-size: larger;
+}
+.content {
+  overflow: scroll;
+}
 
-  #signin {
+#productN {
+  width: 108px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+#productQ {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+.same-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+#productU {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+#productP {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+#productD {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #6b7280;
+}
+.create_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+}
+@media only screen and (max-width: 1280px) {
+  .row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 3px 215px;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
 
+  .add_Product {
     position: absolute;
-    width: 312px;
-    height: 47px;
-    left: calc(50% - 312px / 2 + 0.5px);
-    top: 492px;
+    width: 133px;
+    height: 40px;
+    left: 200px;
+    top: 140px;
 
     background: #5048e5;
     border-radius: 4px;
   }
-  #email {
+  .title {
     position: absolute;
-    width: 312px;
-    height: 48px;
-    left: 32px;
-    top: 322px;
+    width: 1193px;
+    height: 44px;
+    left: -500px;
+    top: 140px;
 
-    background: #ffffff;
-    border: 1px solid #cccccc;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-
-  #password {
-    position: absolute;
-    width: 312px;
-    height: 48px;
-    left: 32px;
-    top: 421px;
-
-    background: #ffffff;
-    border: 1px solid #cccccc;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
-  #emaillabel {
-    position: absolute;
-    width: 36px;
-    height: 24px;
-    left: 32px;
-    top: 290px;
+    /* Typography/H4 */
 
     font-family: "Inter";
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 137.5%;
+    /* identical to box height, or 44px */
 
-    display: flex;
-    align-items: flex-end;
+    /* Text/Primary */
 
-    color: #6b7280;
-  }
-  #passwordlabel {
-    position: absolute;
-    width: 65px;
-    height: 24px;
-    left: 32px;
-    top: 393px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
-
-    display: flex;
-    align-items: flex-end;
-
-    color: #6b7280;
-  }
-
-  #showpassword {
-    position: absolute;
-    width: 38px;
-    height: 24px;
-    left: 294px;
-    top: 431px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
-
-    display: flex;
-    align-items: flex-end;
-    text-decoration-line: underline;
-
-    color: #6b7280;
-  }
-
-  #setSignup {
-    position: static;
-    width: 51px;
-    height: 22px;
-    left: 0px;
-    top: 0px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 157%;
-    /* identical to box height, or 22px */
-
-    display: flex;
-    align-items: center;
-
-    /* Primary/Main */
-
-    color: #5048e5;
-  }
-  #forget {
-    position: static;
-    width: 120px;
-    height: 22px;
-    left: 0px;
-    top: 0px;
-
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 157%;
-    /* identical to box height, or 22px */
-
-    display: flex;
-    align-items: center;
-
-    /* Primary/Main */
-
-    color: #5048e5;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 0px;
+    color: #111827;
   }
 }

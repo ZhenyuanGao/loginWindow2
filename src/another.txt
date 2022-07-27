@@ -1,0 +1,167 @@
+//import logo from "./logo.svg";
+import "./App.css";
+
+import React from "react";
+import CheckOut from "./checkOut";
+import { useState, useEffect } from "react";
+import { getProduct } from "./actions/index";
+import lodash from "lodash";
+import axios from "axios";
+//import { ErrorBoundary } from "react-error-boundary";
+
+import "./index.css";
+import { MdArrowBackIosNew } from "react-icons/md";
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    // Update state so the next render will show the fallback UI.
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    // You can also log the error to an error reporting service
+    //logErrorToMyService(error, errorInfo);
+    return <h1>this is an error</h1>;
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // You can render any custom fallback UI
+      return <h1>Something went wrong.</h1>;
+    }
+
+    return this.props.children;
+  }
+}
+
+function App({ calling }) {
+  //throw new Error();
+  // return <CheckOut />;
+  const [pages, setPages] = useState(1);
+
+  const [isloading, setIsLoading] = useState(false);
+  const [arr, setArr] = useState([]);
+  const [A, SetA] = useState(false);
+  async function getApi() {
+    setIsLoading(true);
+    //  const abc = await getApi();
+    let axioArray = await axios.get("https://retoolapi.dev/A3NuQb/data", {
+      params: { id: pages },
+    });
+    console.log(pages);
+    console.log(axioArray);
+
+    axioArray = axioArray.data[0].Column;
+    console.log(axioArray);
+    // setArr(axioArray);
+  }
+  function changePage() {
+    getApi();
+  }
+  /*
+  useEffect(() => {
+    async function getData() {
+      setIsLoading(true);
+      //  const abc = await getApi();
+      let axioArray = await axios.get("https://retoolapi.dev/A3NuQb/data", {
+        params: { id: 1 },
+      });
+      axioArray = axioArray.data[0].Column;
+      console.log(axioArray);
+      // setArr(abc);
+      // console.log(arr);
+      //console.log(abc);
+      /*
+    abc.map((item) => {
+      setArr((prevState) => {
+        return [...prevState, item.name];
+      });
+    });
+*/
+  /*
+      setArr(axioArray);
+      setIsLoading(false);
+    }
+    getData();
+    return;
+  }, []);
+  */
+  useEffect(() => {
+    async function getData() {
+      setIsLoading(true);
+      //  const abc = await getApi();
+      let axioArray = await axios.get("https://retoolapi.dev/A3NuQb/data", {
+        params: { id: pages },
+      });
+      axioArray = axioArray.data[0].Column;
+      console.log(axioArray);
+      // setArr(abc);
+      // console.log(arr);
+      //console.log(abc);
+      /*
+    abc.map((item) => {
+      setArr((prevState) => {
+        return [...prevState, item.name];
+      });
+    });
+*/
+      setArr(axioArray);
+
+      setIsLoading(false);
+    }
+    getData();
+    return;
+  }, [pages]);
+  return (
+    <>
+      <div className="wrapper">
+        <button
+          onClick={() => {
+            setPages(2);
+            //changePage(pages);
+            //console.log(pages);
+          }}
+        >
+          front
+        </button>
+        <button onClick={() => console.log(pages)}> prev</button>
+        <button disabled={isloading === true || pages === 4}>next</button>
+        <button
+          disabled={isloading === true || pages === 4}
+          onClick={() => {
+            setPages(4);
+            console.log("here is" + arr);
+            console.log(Array.isArray(arr));
+          }}
+        >
+          back
+        </button>
+        {A}
+      </div>
+      <div>
+        <tbody>
+          {arr.map((item, i) => {
+            return [
+              <tr key={i}>
+                <td className="toggler">
+                  {item.mobile_open && <ArrowUp />}
+                  {!item.mobile_open && <ArrowDown />}
+                </td>
+                <td>{item.elem_one}</td>
+                <td>{item.elem_two}</td>
+                <td>{item.elem_three}</td>
+              </tr>,
+            ];
+          })}
+          ;
+        </tbody>
+      </div>
+    </>
+  );
+}
+
+export default App;
