@@ -10,3 +10,7 @@ This project also used ExpressJS, Redux and React Hooks.
 
 
 ![image](https://user-images.githubusercontent.com/31643389/193664077-f44690f5-8f29-47a4-a0db-1e647acb1dd1.png)
+
+
+
+![image](https://user-images.githubusercontent.com/31643389/193664315-d174aafb-73ff-4074-8b2e-a8b10152d362.png)
