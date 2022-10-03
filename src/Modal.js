@@ -10,7 +10,11 @@ const MyModal = (props) => {
     <>
       <Modal
         className={"login_model"}
-        closeIcon={<CloseCircleOutlined />}
+        closeIcon={
+          <div className="close-icon">
+            <CloseCircleOutlined />
+          </div>
+        }
         title={<div className="modal-title">{titleText}</div>}
         visible={visible}
         footer={null}

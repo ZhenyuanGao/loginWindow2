@@ -3,8 +3,10 @@ import validate from "./validateinfo";
 //import { Link } from "react-router-dom";
 import signInScreen from "./signInScreen";
 import { Input, Button } from "antd";
+
 //import Modal from "./Modal";
 import "./index.css";
+
 export const LoginPage = ({ profile, setProfile }) => {
   const [value, setValue] = useState("");
   const [password, setpwd] = useState("");
@@ -56,12 +58,16 @@ export const LoginPage = ({ profile, setProfile }) => {
               setValue(e.target.value);
             }}
           />
-          {errors.username && <p> {errors.username}</p>}
-          {errors.email && <p> {errors.email}</p>}
+          <div className="email_not_empty">
+            {errors.username && <p> {errors.username}</p>}
+          </div>
+          {<div className="email_not_valid">errors.email</div> && (
+            <p> {errors.email}</p>
+          )}
         </div>
 
         <div>
-          <label id="passwordlabel">PASSWORD</label>
+          <label id="passwordlabel">PASSWORD</label>F
           <div>
             <Input
               id="password"
