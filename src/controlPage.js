@@ -145,7 +145,7 @@ export default function ControlPage({ forShopping, setForShopping }) {
         <div className="site-page-header-ghost-wrapper">
           <PageHeader
             ghost={true}
-            title="Management Chuwa"
+            title="Management System Test"
             extra={[
               <Search
                 className="anmoyous"
@@ -201,7 +201,7 @@ export default function ControlPage({ forShopping, setForShopping }) {
         <div className="site-page-header-ghost-wrapper">
           <PageHeader
             ghost={true}
-            title="Management Chuwa"
+            title="Management System Test"
             extra={[
               <Input placeholder=""></Input>,
               <a
@@ -270,7 +270,7 @@ export default function ControlPage({ forShopping, setForShopping }) {
           <div className="site-page-header-ghost-wrapper">
             <PageHeader
               ghost={true}
-              title="Management Chuwa"
+              title="Management System Test"
               extra={[
                 <Search
                   className="anmoyous"
@@ -332,7 +332,7 @@ export default function ControlPage({ forShopping, setForShopping }) {
         <div className="site-page-header-ghost-wrapper">
           <PageHeader
             ghost={true}
-            title="Management Chuwa"
+            title="Management System Test"
             extra={[
               <Input placeholder=""></Input>,
               <a
@@ -399,7 +399,7 @@ export default function ControlPage({ forShopping, setForShopping }) {
         <div className="site-page-header-ghost-wrapper">
           <PageHeader
             ghost={true}
-            title="Management Chuwa"
+            title="Management System Test"
             extra={[
               <a onClick={() => setCreateProd(true)}>Create a product</a>,
               <a
@@ -505,7 +505,7 @@ export default function ControlPage({ forShopping, setForShopping }) {
         <div className="site-page-header-ghost-wrapper">
           <PageHeader
             ghost={true}
-            title="Management Chuwa"
+            title="Management System Test"
             extra={[
               <Input placeholder=""></Input>,
               <a
