@@ -6,7 +6,7 @@ export default function HeaderFile() {
     <div className="site-page-header-ghost-wrapper">
       <PageHeader
         ghost={false}
-        title="Management Chuwa"
+        title="Management System Test"
         extra={[
           <Input placeholder="jhh"></Input>,
           <a key="3">Sign out</a>,
